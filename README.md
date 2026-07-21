@@ -1,5 +1,7 @@
 # Electron Shield
 
+**A solution for Electron apps that freeze Linux due to excessive resource usage.**
+
 Resource limits for Electron apps — a lightweight systemd user service that auto-detects Electron processes and cgroups them with CPU, memory, and PID limits. No root required.
 
 ## Why?

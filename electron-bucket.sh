@@ -26,7 +26,7 @@ COMMUNICATORS="slack|discord|teams|zoom\s?client|element|mattermost|mattermos\w*
 CODE_EDITORS="code|vscodium|cursor|stormkit|wind\w*s?urf|zed|atom|fleet|brumby-editor|helix-desktop|monaco-editor|tauri-explorer|trilium|goland|rubymine"
 
 # Design / graphics / whiteboards
-DESIGN="figma|penpot|excalidraw|draw\.io|drawio|infinite-ink|canva|obsidian-studio|sketchware|tldraw|diagrams-net|lunacy|affinity\w*\s?design"
+DESIGN="figma|penpot|excalidraw|draw\.io|drawio|infinite-ink|canva|obsidian-studio|sketchware|tldraw|diagrams-net|lunacy|affinity\w*\s?design|comfy-ui|comfyui|stable-diffusion-webui|sd-webui|fooocus"
 
 # Productivity / notes / knowledge bases
 PRODUCTIVITY="notion|evernote|onenote|roam-research|craft-notes|bear-notes|joplin|logseq|remnote|obsidian|standard-notes|simplenote|siyuan-note|heptabase|scrintal|turtl"
@@ -44,7 +44,7 @@ MEDIA_PLAYERS="spotify|vlc|audacity|plex\w*\s?desktop|bandlab|soundtrap|roon|tid
 FILE_MANAGERS="dropbox|megasync|syncthing\s?tray|filebrowser|nautilus-web|pcloud\w*\s?drive|resilio\s?sync|synology\w*\s?drive|nextcloud-desktop"
 
 # Databases / API tools / dev utilities
-DEV_TOOLS="postman|insomnia|beekeeper-studio|tableplus|dbeaver|sequel-ace|pgadmin|db-browser-for-sqlite|bruno-api-client|hoppscotch|wasp-panel|curlie-gui|httpie-desktop"
+DEV_TOOLS="postman|insomnia|beekeeper-studio|tableplus|dbeaver|sequel-ace|pgadmin|db-browser-for-sqlite|bruno-api-client|hoppscotch|wasp-panel|curlie-gui|httpie-desktop|lm-studio"
 
 # Browsers / web wrappers
 BROWSERS="brave\s?browser|chromium\s?-app|firefox\s?-webview|pale\w*\s?moon|waterfox|vivaldi|opera\s?gx|arc-browser|edge-webview2"
