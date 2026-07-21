@@ -1,0 +1,26 @@
+[Unit]
+Description=Electron Shield — resource cgroup manager for Electron apps
+Documentation=https://www.kernel.org/doc/Documentation/cgroup-v2.txt
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/electron-bucket.sh
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+# Resource limits for the daemon itself (negligible footprint)
+MemoryMax=50M
+CPUQuota=5%
+
+# Defaults — override in ~/.config/electron-shield.conf or via systemctl set-environment
+EnvironmentFile=%h/.config/electron-shield.conf 2>/dev/null || true
+Environment=ELECTRON_CPU_MAX=${ELECTRON_CPU_MAX:-50%}
+Environment=ELECTRON_MEM_MAX=${ELECTRON_MEM_MAX:-1G}
+Environment=ELECTRON_PIDS_MAX=${ELECTRON_PIDS_MAX:-64}
+Environment=ELECTRON_INTERVAL=${ELECTRON_INTERVAL:-5}
+
+[Install]
+WantedBy=default.target
