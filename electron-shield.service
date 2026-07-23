@@ -16,7 +16,7 @@ MemoryMax=50M
 CPUQuota=5%
 
 # Defaults — override in ~/.config/electron-shield.conf or via systemctl set-environment
-EnvironmentFile=%h/.config/electron-shield.conf 2>/dev/null || true
+EnvironmentFile=-%h/.config/electron-shield.conf
 Environment=ELECTRON_CPU_MAX=${ELECTRON_CPU_MAX:-50%}
 Environment=ELECTRON_MEM_MAX=${ELECTRON_MEM_MAX:-1G}
 Environment=ELECTRON_PIDS_MAX=${ELECTRON_PIDS_MAX:-64}
